@@ -1,22 +1,28 @@
 {
   "tasks": [
     {
+      "id": "1",
+      "title": "Lire un chapitre",
+      "category": "Widmer",
+      "done": true
+    },
+    {
       "id": "2",
       "title": "Lire un chapitre",
       "category": "Français",
-      "done": true
+      "done": false
     }
   ],
   "grades": [
     {
       "id": "1",
-      "value": 4,
-      "subject": "Maths"
+      "value": 5,
+      "subject": "Français"
     },
     {
       "id": "2",
-      "value": 5,
-      "subject": "Français"
+      "value": 4,
+      "subject": "Math"
     }
   ]
 }

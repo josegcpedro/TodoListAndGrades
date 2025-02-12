@@ -1,8 +1,6 @@
 <div class="grade">
     <h3>
-        {{grade.subject}}
+        {{ grade.subject }}
+        <fa-icon [icon]="faTimes" [ngStyle]="{'color': 'red'}" (click)="onDelete()"></fa-icon>
     </h3>
-    <p>
-        {{grade.value}}
-    </p>
-</div>
+    <p>{{ grade.value }}</p>

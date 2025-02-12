@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { TaskService } from '../../services/todo/task.service';
 import { Task } from '../../../Task';
-import { TaskItemComponent } from '../task-item/task-item.component'; // Importando o componente standalone
-import { CommonModule } from '@angular/common'; // Necessário para diretivas do Angular, como *ngFor
+import { TaskItemComponent } from '../task-item/task-item.component'; 
+import { CommonModule } from '@angular/common'; 
 
 @Component({
   selector: 'app-todo-list',
-  standalone: true, // Definindo como standalone
-  imports: [TaskItemComponent, CommonModule], // Importando TaskItemComponent e CommonModule
+  standalone: true, 
+  imports: [TaskItemComponent, CommonModule], 
   templateUrl: './todo-list.component.html',
   styleUrls: ['./todo-list.component.css']
 })
@@ -23,6 +23,11 @@ export class TodoListComponent implements OnInit {
   }
 
   deleteTask(task: Task): void {
-    this.taskService.deleteTask(task).subscribe();
+    this.taskService.deleteTask(task).subscribe(() => (this.tasks = this.tasks.filter((t) => t.id !== task.id)));
+  }
+
+  toggleDone(task: Task){
+    task.done = !task.done;
+    this.taskService.updateTask(task).subscribe();
   }
 }

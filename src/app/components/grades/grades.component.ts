@@ -6,9 +6,11 @@ import { GradesItemComponent } from '../grades-item/grades-item.component';
 
 @Component({
   selector: 'app-grades',
+  standalone: true,
   imports: [CommonModule, GradesItemComponent],
   templateUrl: './grades.component.html',
-  styleUrl: './grades.component.css'
+  styleUrls: ['./grades.component.css']
+
 })
 export class GradesComponent implements OnInit {
   grades: Grade[] = []
@@ -19,5 +21,9 @@ export class GradesComponent implements OnInit {
     this.gradeService.getGrades().subscribe((data) => {
       this.grades = data;
     })
+  }
+
+  deleteGrade(grade: Grade): void {
+    this.gradeService.deleteGrade(grade).subscribe(() => (this.grades = this.grades.filter((g) => g.id !== grade.id)));
   }
 }

@@ -2,5 +2,5 @@
     <h1 class="gradesText">
         Notas
     </h1>
-    <app-grades-item *ngFor="let grade of grades" [grade]="grade"></app-grades-item>
+    <app-grades-item *ngFor="let grade of grades" [grade]="grade" (onDeleteGrade)="deleteGrade(grade)"></app-grades-item>
 </div>
