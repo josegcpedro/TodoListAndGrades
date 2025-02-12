@@ -12,6 +12,6 @@ export class HomeComponent {
   constructor(private router: Router) { }
 
   goTo(page: string) {
-    this.router.navigate([page]); // Redirige vers '/todolist' ou '/notes'
+    this.router.navigate([page]);
   }
 }
