@@ -1,5 +1,7 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
+import { GradesComponent } from './components/grades/grades.component';
+import { TodoListComponent } from './components/todo-list/todo-list.component';
 
 export const routes: Routes = [
     {
@@ -8,10 +10,10 @@ export const routes: Routes = [
     },
     {
         path: "todolist",
-        component: HomeComponent
+        component: TodoListComponent
     },
     {
         path: "notes",
-        component: HomeComponent
+        component: GradesComponent
     },
 ];
