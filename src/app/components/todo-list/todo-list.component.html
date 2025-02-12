@@ -2,5 +2,6 @@
     <h1 class="toDoListText">
         Tarefas
     </h1>
-    <app-task-item *ngFor="let task of tasks" [task]="task" (onDeleteTask)="onDeleteTask($event)"></app-task-item>
+    <app-task-item *ngFor="let task of tasks" [task]="task" (onDeleteTask)="deleteTask(task)"></app-task-item>
+
 </div>

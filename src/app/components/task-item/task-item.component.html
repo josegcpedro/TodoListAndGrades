@@ -1,9 +1,7 @@
 <div class="task">
     <h3>
-        {{task.title}}
-        <fa-icon [icon]="faTimes" [ngStyle]="{'color': 'red'}" (click)="onDelete(task)" ></fa-icon>
+        {{ task.title }}
+        <fa-icon [icon]="faTimes" [ngStyle]="{'color': 'red'}" (click)="onDelete()"></fa-icon>
     </h3>
-    <p>
-        {{task.category}}
-    </p>
+    <p>{{ task.category }}</p>
 </div>

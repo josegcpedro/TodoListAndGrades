@@ -1,27 +1,23 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Task } from '../../../Task';
-import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { CommonModule } from '@angular/common';
-
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'; // Importação necessária
 
 @Component({
   selector: 'app-task-item',
-  imports: [FontAwesomeModule, CommonModule],
+  standalone: true,
+  imports: [CommonModule, FontAwesomeModule], // Adicionando FontAwesomeModule
   templateUrl: './task-item.component.html',
-  styleUrl: './task-item.component.css'
+  styleUrls: ['./task-item.component.css']
 })
 export class TaskItemComponent {
-  @Input() task!: Task
+  @Input() task!: Task;
   @Output() onDeleteTask = new EventEmitter<Task>();
+
   faTimes = faTimes;
 
-  constructor(library: FaIconLibrary) {
-    library.addIcons(faTimes);
-  }
-
-  onDelete(task: Task){
-    this.onDeleteTask.emit(task);
+  onDelete() {
+    this.onDeleteTask.emit(this.task);
   }
 }
