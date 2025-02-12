@@ -1,0 +1,13 @@
+.welcomeText{
+    text-align: center;
+}
+
+.homeOptions{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.homeOptions h2{
+    color: blue;
+}
