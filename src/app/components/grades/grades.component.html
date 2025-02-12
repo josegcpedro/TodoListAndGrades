@@ -1,1 +1,6 @@
-<p>grades works!</p>
+<div class="container">
+    <h1 class="gradesText">
+        Notas
+    </h1>
+    <app-grades-item *ngFor="let grade of grades" [grade]="grade"></app-grades-item>
+</div>
