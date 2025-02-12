@@ -1,1 +1,6 @@
-<p>todo-list works!</p>
+<div class="container">
+    <h1>
+        Tarefas
+    </h1>
+    <app-task-item *ngFor="let task of tasks" [task]="task"></app-task-item>
+</div>
