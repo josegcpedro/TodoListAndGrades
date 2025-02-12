@@ -1,0 +1,28 @@
+{
+    "tasks": [
+        {
+            "id": 1,
+            "title": "Faire son devoir",
+            "category": "Maths",
+            "done": false
+        },
+        {
+            "id": 2,
+            "title": "Lire un chapitre",
+            "category": "Français",
+            "done": true
+        }
+    ],
+    "grades": [
+        {
+            "id": 1,
+            "value": 4,
+            "subject": "Maths"
+        },
+        {
+            "id": 2,
+            "value": 5,
+            "subject": "Français"
+        }
+    ]
+}
