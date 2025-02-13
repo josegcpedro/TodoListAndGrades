@@ -1,11 +1,12 @@
 import { Component, Output, EventEmitter } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Grade } from '../../../Grade';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-add-grade',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './add-grade.component.html',
   styleUrl: './add-grade.component.css'
 })
@@ -15,8 +16,9 @@ export class AddGradeComponent {
   subject: string = "";
   value: number = 0;
 
+
   onSubmit() {
-    if (!this.subject || this.value <= 0 ) {
+    if (!this.subject || this.value <= 0) {
       alert("Adicione uma nota superior a 0 e escolha uma categoria");
       return;
     }

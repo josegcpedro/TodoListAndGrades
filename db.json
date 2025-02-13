@@ -1,17 +1,25 @@
 {
-  "tasks": [
+  "tasks": [],
+  "grades": [
     {
-      "id": "1",
-      "title": "Lire un chapitre",
-      "category": "Widmer",
-      "done": false
+      "id": "8762",
+      "subject": "Module 347",
+      "value": "2"
     },
     {
-      "id": "2",
-      "title": "Lire un chapitre",
-      "category": "Français",
-      "done": false
+      "id": "a1c7",
+      "subject": "Module 165",
+      "value": "04"
+    },
+    {
+      "id": "3045",
+      "subject": "Anglais",
+      "value": "2"
+    },
+    {
+      "id": "6302",
+      "subject": "Anglais",
+      "value": "4"
     }
-  ],
-  "grades": []
+  ]
 }

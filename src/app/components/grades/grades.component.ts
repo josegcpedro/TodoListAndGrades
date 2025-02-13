@@ -20,7 +20,7 @@ export class GradesComponent implements OnInit {
 
   ngOnInit(): void {
     this.gradeService.getGrades().subscribe((data) => {
-      this.grades = data;
+    this.grades = data;
     })
   }
 
