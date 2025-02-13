@@ -1,0 +1,27 @@
+<form (ngSubmit)="onSubmit()">
+    <div>
+        <label for="text">Tarefa</label>
+        <input type="text" name="text" class="form-control" placeholder="Adicionar Tarefa" id="text" [(ngModel)]="task">
+    </div>
+
+    <div class="mb-4">
+        <label for="category">Categoria</label>
+        <select name="category" id="category" class="form-select" [(ngModel)]="category">
+            <option value="">Selecione uma categoria</option>
+            <option value="Module 114">Module 114</option>
+            <option value="Module 254">Module 254</option>
+            <option value="Module 346">Module 346</option>
+            <option value="Module 165">Module 165</option>
+            <option value="Module 320">Module 320</option>
+            <option value="Module 322">Module 322</option>
+            <option value="Module 347">Module 347</option>
+            <option value="Module 426">Module 426</option>
+            <option value="Anglais">Anglais</option>
+            <option value="Culture génerale">Culture génerale</option>
+            <option value="Maths">Maths</option>
+        </select>
+    </div>
+
+
+    <input type="submit" value="Guardar" class="btn btn-block mb-4">
+</form>

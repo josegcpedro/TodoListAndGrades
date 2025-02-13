@@ -19,4 +19,8 @@ export class GradeService {
   deleteGrade(grade:Grade): Observable<Grade>{
     return this.http.delete<Grade>(`${this.apiUrl}/${grade.id}`)
   }
+
+  addGrade(grade: Grade): Observable<Grade>{
+    return this.http.post<Grade>(`${this.apiUrl}`, grade)
+  }
 }

@@ -4,7 +4,7 @@
       "id": "1",
       "title": "Lire un chapitre",
       "category": "Widmer",
-      "done": true
+      "done": false
     },
     {
       "id": "2",
@@ -13,16 +13,5 @@
       "done": false
     }
   ],
-  "grades": [
-    {
-      "id": "1",
-      "value": 5,
-      "subject": "Français"
-    },
-    {
-      "id": "2",
-      "value": 4,
-      "subject": "Math"
-    }
-  ]
+  "grades": []
 }

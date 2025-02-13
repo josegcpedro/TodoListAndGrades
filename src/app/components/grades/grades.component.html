@@ -2,5 +2,6 @@
     <h1 class="gradesText">
         Notas
     </h1>
+    <app-add-grade (onAddGrade)="addGrade($event)"></app-add-grade>
     <app-grades-item *ngFor="let grade of grades" [grade]="grade" (onDeleteGrade)="deleteGrade(grade)"></app-grades-item>
 </div>
