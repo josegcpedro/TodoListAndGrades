@@ -1,25 +1,4 @@
 {
   "tasks": [],
-  "grades": [
-    {
-      "id": "8762",
-      "subject": "Module 347",
-      "value": "2"
-    },
-    {
-      "id": "a1c7",
-      "subject": "Module 165",
-      "value": "04"
-    },
-    {
-      "id": "3045",
-      "subject": "Anglais",
-      "value": "2"
-    },
-    {
-      "id": "6302",
-      "subject": "Anglais",
-      "value": "4"
-    }
-  ]
+  "grades": []
 }
